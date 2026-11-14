@@ -1,0 +1,26 @@
+{
+    "name": "arionpay/arionpay-php",
+    "description": "Official PHP client for ArionPay: create crypto invoices and verify webhooks. Payments go straight to your own wallet.",
+    "type": "library",
+    "keywords": ["arionpay", "crypto", "payments", "bitcoin", "usdt", "payment-gateway", "webhook"],
+    "homepage": "https://arionpay.com",
+    "license": "MIT",
+    "authors": [{ "name": "ArionPay", "homepage": "https://arionpay.com" }],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "ext-hash": "*"
+    },
+    "suggest": {
+        "ext-curl": "Faster and more reliable HTTP; without it PHP streams are used"
+    },
+    "autoload": {
+        "psr-4": { "ArionPay\\": "src/" }
+    },
+    "scripts": {
+        "test": "php tests/run.php"
+    },
+    "support": {
+        "source": "https://github.com/ArionPay-Dev/arionpay-php"
+    }
+}
